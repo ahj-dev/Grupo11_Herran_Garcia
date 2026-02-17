@@ -4,28 +4,238 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!--conexion bootstrap-->
+    <!-- Conexion bootstrap -->
     <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/css/bootstrap.min.css" rel="stylesheet">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script>
-    <!--conexion al css-->
+    <!-- conexion con css -->
     <link rel="stylesheet" href="style.css">
-    <!--conexion al script-->
+    <!-- conexion script -->
     <script src="script.js" defer></script>
-    <!--conexion a la fuente y los iconos-->
+    <!-- conexion de la fuente y los iconos -->
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
-
     <title>Mi portafolio</title>
 </head>
 
 <body>
+
     <!-- Header -->
-    <header class="header"></header>
-    <section class="about"></section>
-    <section class="projects"></section>
-    <section class="skills"></section>
-    <footer class="footer"></footer>
+    <header class="header">
+        <nav class="nav-menu">
+            <a href="#about">Sobre mí</a>
+            <a href="#projects">Proyectos</a>
+            <a href="#skills">Habilidades</a>
+            <a href="#contact">Contacto</a>
+        </nav>
+        <div class="header-content">
+            <div class="avatar">
+                <i class="fa-solid fa-user"></i>
+            </div>
+            <h1>Alejandro Herrán Jordan</h1>
+            <p>Desarrollador Backend · Diseñador UI/UX · Constructor de soluciones digitales</p>
+            <div class="header-links">
+                <a href="https://github.com/ahj-dev" target="_blank"><i class="fa-brands fa-github"></i> GitHub</a>
+                <a href="https://linkedin.com/" target="_blank"><i class="fa-brands fa-linkedin"></i> LinkedIn</a>
+                <a href="#contact"><i class="fa-solid fa-envelope"></i> Contacto</a>
+            </div>
+        </div>
+    </header>
+
+    <!-- Seccion sobre mi -->
+    <section class="about" id="about">
+        <div class="container">
+            <h2 class="section-title">Sobre mí</h2>
+            <div class="about-content">
+                <div class="about-text">
+                    <p>Hola, soy un desarrollador web con pasión por crear experiencias digitales atractivas y funcionales. Me especializo en tecnologías modernas del stack web, tanto en el frontend como en el backend.</p>
+                    <p>Actualmente busco oportunidades donde pueda aportar creatividad, buenas prácticas de código y aprender continuamente en un equipo dinámico.</p>
+                    <a href="#contact" class="btn-primary">Contáctame</a>
+                </div>
+                <div class="about-stats">
+                    <div class="stat-card">
+                        <span class="stat-number">10+</span>
+                        <span class="stat-label">Proyectos</span>
+                    </div>
+                    <div class="stat-card">
+                        <span class="stat-number">3+</span>
+                        <span class="stat-label">Años de experiencia</span>
+                    </div>
+                    <div class="stat-card">
+                        <span class="stat-number">5+</span>
+                        <span class="stat-label">Tecnologías</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Proyectos -->
+    <section class="projects" id="projects">
+        <div class="container">
+            <h2 class="section-title">Proyectos</h2>
+            <div class="projects-grid">
+
+                <div class="project-card">
+                    <div class="project-img" style="background: linear-gradient(135deg, #667eea, #764ba2);">
+                        <i class="fa-solid fa-cart-shopping"></i>
+                    </div>
+                    <div class="project-info">
+                        <h3>E-commerce App</h3>
+                        <p>Tienda online completa con carrito de compras, autenticación y pagos integrados.</p>
+                        <div class="project-tags">
+                            <span>React</span><span>Node.js</span><span>MongoDB</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="#"><i class="fa-brands fa-github"></i> Código</a>
+                            <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i> Demo</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <div class="project-img" style="background: linear-gradient(135deg, #f093fb, #f5576c);">
+                        <i class="fa-solid fa-list-check"></i>
+                    </div>
+                    <div class="project-info">
+                        <h3>Task Manager</h3>
+                        <p>Aplicación de gestión de tareas con drag & drop, notificaciones y sincronización en tiempo real.</p>
+                        <div class="project-tags">
+                            <span>Vue.js</span><span>Firebase</span><span>CSS3</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="#"><i class="fa-brands fa-github"></i> Código</a>
+                            <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i> Demo</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <div class="project-img" style="background: linear-gradient(135deg, #4facfe, #00f2fe);">
+                        <i class="fa-solid fa-cloud-sun"></i>
+                    </div>
+                    <div class="project-info">
+                        <h3>Weather Dashboard</h3>
+                        <p>Dashboard del clima con gráficas interactivas, pronóstico extendido y búsqueda por ciudad.</p>
+                        <div class="project-tags">
+                            <span>JavaScript</span><span>API REST</span><span>Chart.js</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="#"><i class="fa-brands fa-github"></i> Código</a>
+                            <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i> Demo</a>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Habilidades -->
+    <section class="skills" id="skills">
+        <div class="container">
+            <h2 class="section-title">Habilidades</h2>
+            <div class="skills-content">
+
+                <div class="skills-category">
+                    <h3><i class="fa-solid fa-desktop"></i> Frontend</h3>
+                    <div class="skills-list">
+                        <div class="skill-badge">
+                            <i class="fa-brands fa-html5"></i> HTML5
+                            <div class="skill-bar"><div class="skill-fill" style="width:95%"></div></div>
+                        </div>
+                        <div class="skill-badge">
+                            <i class="fa-brands fa-css3-alt"></i> CSS3
+                            <div class="skill-bar"><div class="skill-fill" style="width:90%"></div></div>
+                        </div>
+                        <div class="skill-badge">
+                            <i class="fa-brands fa-js"></i> JavaScript
+                            <div class="skill-bar"><div class="skill-fill" style="width:85%"></div></div>
+                        </div>
+                        <div class="skill-badge">
+                            <i class="fa-brands fa-react"></i> React
+                            <div class="skill-bar"><div class="skill-fill" style="width:80%"></div></div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="skills-category">
+                    <h3><i class="fa-solid fa-server"></i> Backend</h3>
+                    <div class="skills-list">
+                        <div class="skill-badge">
+                            <i class="fa-brands fa-node-js"></i> Node.js
+                            <div class="skill-bar"><div class="skill-fill" style="width:75%"></div></div>
+                        </div>
+                        <div class="skill-badge">
+                            <i class="fa-solid fa-database"></i> SQL / MongoDB
+                            <div class="skill-bar"><div class="skill-fill" style="width:70%"></div></div>
+                        </div>
+                        <div class="skill-badge">
+                            <i class="fa-brands fa-python"></i> Python
+                            <div class="skill-bar"><div class="skill-fill" style="width:65%"></div></div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="skills-category">
+                    <h3><i class="fa-solid fa-wrench"></i> Herramientas</h3>
+                    <div class="skills-list">
+                        <div class="skill-badge">
+                            <i class="fa-brands fa-git-alt"></i> Git / GitHub
+                            <div class="skill-bar"><div class="skill-fill" style="width:90%"></div></div>
+                        </div>
+                        <div class="skill-badge">
+                            <i class="fa-brands fa-figma"></i> Figma
+                            <div class="skill-bar"><div class="skill-fill" style="width:70%"></div></div>
+                        </div>
+                        <div class="skill-badge">
+                            <i class="fa-brands fa-docker"></i> Docker
+                            <div class="skill-bar"><div class="skill-fill" style="width:60%"></div></div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Contacto -->
+    <section class="contact" id="contact">
+        <div class="container">
+            <h2 class="section-title light">Contacto</h2>
+            <p class="contact-subtitle">¿Tienes un proyecto en mente? ¡Hablemos!</p>
+            <form id="contactForm" class="contact-form">
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="nombre">Nombre</label>
+                        <input type="text" id="nombre" placeholder="Tu nombre" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email</label>
+                        <input type="email" id="email" placeholder="tu@email.com" required>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="mensaje">Mensaje</label>
+                    <textarea id="mensaje" rows="5" placeholder="Cuéntame sobre tu proyecto..."></textarea>
+                </div>
+                <button type="submit" class="btn-submit">
+                    <i class="fa-solid fa-paper-plane"></i> Enviar mensaje
+                </button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2025 Tu Nombre · Hecho con <i class="fa-solid fa-heart" style="color: var(--acento)"></i> y mucho café</p>
+            <div class="footer-links">
+                <a href="https://github.com/" target="_blank"><i class="fa-brands fa-github"></i></a>
+                <a href="https://linkedin.com/" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+                <a href="mailto:tu@email.com"><i class="fa-solid fa-envelope"></i></a>
+            </div>
+        </div>
+    </footer>
 
 </body>
-
 </html>
